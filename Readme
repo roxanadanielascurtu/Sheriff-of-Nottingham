@@ -1,0 +1,22 @@
+	In primul rand, am instantiat doua map-uri, kingbonus si queenbonus, care ne vor ajuta la 
+verificarea numarului aparitiei al fiecarui bun legal si asftel, vom putea acorda acel bonus de
+rege sau regina.
+	Ulterior am inceput jocul, serifului i-am asignat variabila serif, care va reprezenta
+indexului lui.Dupa cu ajutorul unui for, in cadrul fiecarei subrunde, am vrut sa simulam cele
+4 runde. Initial am creat sacul cu bunuri legale.List "comm" ne arata elementele fiecarui
+comerciant inainte sa le puna in sac, ulterior in functie de tipul bunului, daca este legal sau
+nu, se pune in unul din cei doi vectori, lgoods si igoods. In functie de strategia comerciantului,
+am pus ori un singur tip de bun legal, ori un bun illegal, daca cele legale nu erau.Aceasta se 
+aplica in cazul greedy si basic.Insa in cazul greedy, daca ne aflam intr-o runda para, atunci
+el va cauta un bun ilegal cu valoare maxima. Daca avem un bribed, acesta va pune in sac, in functie
+de banii pe care ii are, un anumit numar de bunuri ilegale.Am verificat sa vedem cate bunuri poate
+acesta sa ia.Am comparat in functie de bugetul pe care il are si penalty-ul pe care l-ar suporta 
+daca ar da de un comerciant sincer.In ce priveste verificarea sacului, daca seriful are bani, atunci
+ii va verifica pe comercianti, si in acelasi timp trebuie sa verificam ca, nu a primit mita seriful.
+Daca a primit mita, atunci comerciantii scapa de control si ulterior pot sa isi puna in visterie 
+valoarea bunurilor ilegale, daca nu a primit mita insa, acestia vor trebui controlati si verifi-
+cati pentru fiecare bun ilegal sau nedeclarat pe care il au, acest penalty ducandu-se ulterior la serif.
+	In final, am facut clasamentul bazandu-ne pe vectorul buget, care contine averea fiecarui jucator.
+Dupa cu ajutorul unui treemap care sorteaza in ordine inversa am reusit sa facem clasamentul final. Am 
+folosit un arraylist ca si valoare la treemap din cauza ca e posibil ca mai multi competitori sa fie cu aceeasi
+suma.
